@@ -1,0 +1,125 @@
+:root {
+    --navy: #264059;
+    --blue: #6ea0b1;
+    --orange: #e5690b;
+    --brown: #9f5d35;
+    --ink: #263746;
+    --muted: #647887;
+    --page: #f3f6f8;
+    --surface: #ffffff;
+    --border: #dce5e9;
+}
+
+.stApp {
+    background:
+        radial-gradient(ellipse at 90% 0%, rgb(110 160 177 / 14%), transparent 34%),
+        var(--page);
+    color: var(--ink);
+}
+
+.block-container {
+    max-width: 760px;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--navy);
+    letter-spacing: -0.025em;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.intro {
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.65;
+    margin-top: -0.5rem;
+}
+
+div[data-testid="stForm"] {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    box-shadow: 0 12px 30px rgb(38 64 89 / 7%);
+    padding: 1.25rem 1.35rem 1rem;
+}
+
+div[data-testid="stTextInput"] label,
+div[data-testid="stTextInput"] p {
+    color: var(--navy);
+    font-weight: 600;
+}
+
+div[data-testid="stTextInput"] input {
+    background: var(--surface);
+    border-color: var(--border);
+    border-radius: 0.55rem;
+}
+
+div[data-testid="stTextInput"] input:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 1px var(--blue);
+}
+
+button[data-baseweb="tab"] {
+    color: var(--muted);
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: var(--navy);
+}
+
+button[data-baseweb="tab-highlight"] {
+    background-color: var(--orange);
+}
+
+div.stButton > button[kind="primary"],
+div.stFormSubmitButton > button[kind="primary"] {
+    background: var(--orange);
+    border: 1px solid var(--orange);
+    border-radius: 0.6rem;
+    color: #ffffff;
+    font-weight: 600;
+    min-height: 2.8rem;
+    transition: background-color 140ms ease, border-color 140ms ease;
+}
+
+div.stButton > button[kind="primary"]:hover,
+div.stFormSubmitButton > button[kind="primary"]:hover {
+    background: #c95708;
+    border-color: #c95708;
+    color: #ffffff;
+}
+
+div.stButton > button:not([kind="primary"]) {
+    border-color: var(--blue);
+    border-radius: 0.6rem;
+    color: var(--navy);
+}
+
+div[data-testid="stMetric"] {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.8rem;
+    box-shadow: 0 6px 18px rgb(38 64 89 / 5%);
+    padding: 1rem;
+}
+
+div[data-testid="stMetricLabel"] {
+    color: var(--muted);
+}
+
+@media (max-width: 640px) {
+    .block-container {
+        padding: 1.5rem 1rem 2rem;
+    }
+
+    div[data-testid="stForm"] {
+        padding: 1rem;
+    }
+}
