@@ -1,0 +1,10 @@
+PROJECT FILES
+=============
+
+frontend.py       Streamlit page, charts, filters, and CSV downloads.
+backend.py        SQLite database, records, and analytics.
+requirements.txt  Python dependencies.
+README.md         Setup notes.
+
+Install: python -m pip install -r requirements.txt
+Run:     streamlit run frontend.py

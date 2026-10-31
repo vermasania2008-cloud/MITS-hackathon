@@ -1,0 +1,14 @@
+APP WORKFLOW
+============
+
+Run: streamlit run frontend.py
+
+1. frontend.py starts the Streamlit dashboard.
+2. backend.py creates/reads data/sustainability.db.
+3. The backend loads the latest 30 days and previous 30 days.
+4. It calculates totals, comparisons, and data-based insights.
+5. The frontend displays KPIs, charts, records, and CSV downloads.
+
+New databases contain labelled sample data by default. Office records are
+saved with backend.save_record({...}). Carbon estimates require an optional,
+authoritative electricity emissions factor.
